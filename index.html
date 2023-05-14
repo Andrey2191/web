@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <div class="header__links">
+                <img class="header__logo" src="/img/logo.svg" alt="logo">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Product &#709;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Product</a>
+                        <a href="#">Product</a>
+                        <a href="#">Product</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Developers &#709;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Developers</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Developers</a>
+                    </div>
+                </div>
+                <a href="#" class="header-link">Beta</a>
+                <a href="#" class="header-link">Pricing</a>
+            </div>
+            <div class="header__buttons">
+                <button class="btn-start"><a href="#">Start your project</a></button>
+                <button class="btn-signin"><a href="#">Sign in</a></button>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__header">
+                <div class="about__info-block">
+                    <div class="info-block-header">
+                        <img class="about__title-img" src="./img/storage.svg" alt="storage">
+                    <span class="about-title">Storage</span>
+                    </div>
+                    <span class="about-main">Store and serve </span>
+                    <span class="about-main mn">any type of digital content</span>
+                    <span class="about__info-description">An open source Object store service with unlimited scalability, for any file type.</span>
+                    <span class="about__info-description">With custom policies and permissions that are familiar and easy to implement.</span>
+                    <button class="btn-about"><a href="#">Start a project</a></button>
+                </div>
+                <div class="about__info-background">
+                    <img src="./img/about-bg.svg" alt="">
+                </div>
+            </div>
+            <div class="about__description">
+                <div class="about__description-block">
+                    <div class="block-icon">
+                        <img src="./img/inter-icon.svg" alt="inter-icon">
+                    </div>
+                    <div class="block-title">Interoperable</div>
+                    <div class="block-description">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</div>
+                </div>
+                <div class="about__description-block">
+                    <div class="block-icon">
+                        <img src="./img/light.svg" alt="inter-icon">
+                    </div>
+                    <div class="block-title">Lightning fast</div>
+                    <div class="block-description">Thin API server layer that leverages Postgres' permissions and performance.</div>
+                </div>
+                <div class="about__description-block">
+                    <div class="block-icon">
+                        <img src="./img/depend.svg" alt="inter-icon">
+                    </div>
+                    <div class="block-title">Dependable</div>
+                    <div class="depend-description">Enterprise-level scalability and durability.</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__dashboard">
+                <div class="dashboard__header">
+                    <h2 class="dashboard__header-about">Sleek dashboard for managing your media</h2>
+                    <span class="dashboard__header-title">A complete Object Explorer so that any of your team can use.</span>
+                    <span class="dashboard__header-description">Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.</span>
+                </div>
+                <div class="dashboard__content">
+                    <div class="dashboard__content-slider">
+                        <div class="slider-wrapper">
+                            <div class="slider__dot active-dot">File previews</div>
+                            <div class="slider__dot">Column view</div>
+                            <div class="slider__dot">List view</div>
+                            <div class="slider__dot multi">Multi select actions</div>
+                            <div class="slider__dot">Path navigator</div>
+                        </div>
+                        <div class="slider-line">
+                            <img src="./img/slider-slick.svg" alt="slick" class="db-slider-img">
+                            <img src="./img/slider-slick.svg" alt="slick" class="db-slider-img">
+                            <img src="./img/slider-slick.svg" alt="slick" class="db-slider-img">
+                            <img src="./img/slider-slick.svg" alt="slick" class="db-slider-img">
+                            <img src="./img/slider-slick.svg" alt="slick" class="db-slider-img">
+                        </div>
+                        
+                    </div>
+                    <div class="dashboard__content-info">
+                        <div class="dashboard-info-header">
+                            <span class="info-header-title">File previews</span>
+                            <span class="info-header-description">Preview any media type, including video and audio.</span>
+                        </div>
+                        <div class="dashboard-info-content">
+                            <span class="info-content-title">Check out our example app</span>
+                            <div class="info-content-example">
+                                <span class="info-example-title">Profile management example</span>
+                                <span class="info-example-description">Update a user account with public profile information, including uploading a profile image.</span>
+                                <div class="info-created">
+                                    <span>Created by:  </span>
+                                    <img src="./img/created-icon.svg" alt="created">
+                                    <span>supabase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-info-footer">
+                            <span class="info-footer">nextjs-ts-user-management</span>
+                            <button class="btn-dasboard">&#9650; Deploy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__api">
+                <div class="main__api-block">
+                    <div class="main__api-info">
+                        <span class="main__api-header">Simple and convenient APIs</span>
+                        <span class="main__api-title">Built from the ground-up for interoperable authentication.</span>
+                        <span class="main__api-description">Fast and easy to implement using our powerful library clients. Asset optimization and image transformation coming soon!</span>
+                    </div>
+                    <div class="main__api-content">
+                        <div class="main__api-card">
+                            <img src="./img/api-wifi.svg" alt="wifi" class="api-card-img">
+                            <span class="api__card-header">CDN integration</span>
+                            <span class="api__card-description">Serve from the edge to reduce latency.</span>
+                            <button class="api-btn">Coming soon</button>
+                        </div>
+                        <div class="main__api-card">
+                            <img src="./img/api-wifi.svg" alt="wifi" class="api-card-img">
+                            <span class="api__card-header">CDN integration</span>
+                            <span class="api__card-description">Serve from the edge to reduce latency.</span>
+                            <button class="api-btn">Coming soon</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__content-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider__dot active-dot">Upload a file</div>
+                        <div class="slider__dot">Download a file</div>
+                        <div class="slider__dot">List files</div>
+                        <div class="slider__dot multi">Move and rename files</div>
+                        <div class="slider__dot">Delete files</div>
+                    </div>
+                    <div class="slider-line">
+                        <img src="./img/api-img.svg" alt="slick" class="db-slider-img">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main__auth">
+                <div class="main__api-block">
+                    <div class="main__api-info">
+                        <span class="main__api-header">Integrates natively with Supabase Auth</span>
+                        <span class="main__api-title auth-title">Using Postgres Row Level Security to create Object access rules.</span>
+                        <span class="main__api-description">Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</span>
+                    </div>
+                    
+                </div>
+                <div class="dashboard__content-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider__dot-auth active-dot-auth">Public access to a bucket</div>
+                        <div class="slider__dot-auth">Public access to a folder</div>
+                        <div class="slider__dot-auth">Authenticated access to a bucket</div>
+                    </div>
+                    <div class="slider-line">
+                        <img src="./img/api-img.svg" alt="slick" class="db-slider-img">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main__start">
+                <div class="main__start-title">
+                    <span class="start-title-grey">Build in a weekend,</span>
+                    <span class="start-title-white">scale to millions</span>
+                </div>
+                <button class="main__start-btn">Start your project</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__content-contacts">
+                    <div class="footer-content-logo">
+                        <img src="./img/logo.svg" alt="logo" class="footer-logo">
+                    </div>
+                    <div class="footer-contact">
+                        <a href="#"><img class="footer-twit" src="./img/twitter.svg" alt="twitter"></a>
+                        <a href="#"><img class="footer-git" src="./img/git.svg" alt="github"></a>
+                    </div>
+                </div>
+                <div class="footer__content-links">
+                    <ul class="footer-list">
+                        <span class="footer-list-title">Product</span>
+                        <li><a class="footer-link" href="">Database</a></li>
+                        <li><a class="footer-link" href="">Authentication</a></li>
+                        <li><a class="footer-link" href="">Storage</a></li>
+                        <li><a class="footer-link" href="">Functions</a></li>
+                        <li><a class="footer-link" href="">Coming soon</a></li>
+                        <li><a class="footer-link" href="">Pricing</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <span class="footer-list-title">Resources</span>
+                        <li><a class="footer-link" href="">Support</a></li>
+                        <li><a class="footer-link" href="">Case Studies</a></li>
+                        <li><a class="footer-link" href="">System Status</a></li>
+                        <li><a class="footer-link" href="">Terms of service</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <span class="footer-list-title">Developers</span>
+                        <li><a class="footer-link" href="">Documentation</a></li>
+                        <li><a class="footer-link" href="">API Reference</a></li>
+                        <li><a class="footer-link" href="">Guides</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <span class="footer-list-title">Company</span>
+                        <li><a class="footer-link" href="">Blog</a></li>
+                        <li><a class="footer-link" href="">Open Source</a></li>
+                        <li><a class="footer-link" href="">Humans.txt</a></li>
+                        <li><a class="footer-link" href="">Lawyers.txt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="theme">
+            <span class="theme__title">© Supabase Inc</span>
+            <img src="./img/theme.svg" alt="theme" class="theme-img">
+        </div>
+    </div>
+  </body>
+</html>
